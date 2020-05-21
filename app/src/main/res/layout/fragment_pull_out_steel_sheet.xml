@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".View.ManageSteelSheetFragment">
+
+
+    <EditText
+        android:id="@+id/edtBarcodeScanField_fragment_pull_out_steel_sheet"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/edtBarcodeScanFieldHint_fragment_pull_out_steel_sheet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShowKeyboard_fragment_pull_out_steel_sheet"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_rounded_corners"
+        android:drawableTop="@drawable/ic_keyboard_lapis_lazuli_64dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvScannedSteelSheetsQty_fragment_pull_out_steel_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/tvScannedSteelSheetsQtyText_fragment_pull_out_steel_sheet"
+        app:layout_constraintBottom_toTopOf="@id/edtSteelSheetsQty_fragment_pull_out_steel_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtSteelSheetsQty_fragment_pull_out_steel_sheet"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edtSteelSheetsQtyHint_fragment_add"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="40dp"
+
+        app:layout_constraintBottom_toTopOf="@id/chbIsForProcessing_fragment_pull_out_steel_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtBarcodeScanField_fragment_pull_out_steel_sheet" />
+
+    <Button
+        android:id="@+id/btnAddToQty_fragment_pull_out_steel_sheet"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_add_substract"
+        android:drawableTop="@drawable/ic_add_qty_lapis_lazuli_50dp"
+        android:layout_marginBottom="40dp"
+
+        app:layout_constraintBottom_toTopOf="@id/chbIsForProcessing_fragment_pull_out_steel_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtSteelSheetsQty_fragment_pull_out_steel_sheet"
+        app:layout_constraintTop_toBottomOf="@id/edtBarcodeScanField_fragment_pull_out_steel_sheet" />
+
+    <Button
+        android:id="@+id/btnSubtractFromQty_fragment_pull_out_steel_sheet"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_add_substract"
+        android:drawableTop="@drawable/ic_substract_qty_lapis_lazuli_24dp"
+        android:layout_marginBottom="40dp"
+
+        app:layout_constraintBottom_toTopOf="@id/chbIsForProcessing_fragment_pull_out_steel_sheet"
+        app:layout_constraintEnd_toStartOf="@id/edtSteelSheetsQty_fragment_pull_out_steel_sheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtBarcodeScanField_fragment_pull_out_steel_sheet" />
+
+    <CheckBox
+        android:id="@+id/chbIsForProcessing_fragment_pull_out_steel_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chbIsForProcessingText_fragment_pull_out_steel_sheet"
+        android:textSize="10dp"
+        android:scaleX="2.0"
+        android:scaleY="2.0"
+
+        app:layout_constraintBottom_toTopOf="@id/btnPullOut_fragment_pull_out_steel_sheet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtSteelSheetsQty_fragment_pull_out_steel_sheet" />
+
+    <Button
+        android:id="@+id/btnPullOut_fragment_pull_out_steel_sheet"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_rounded_corners"
+        android:text="@string/btnPullOutText_fragment_pull_out_steel_sheet"
+        android:drawableTop="@drawable/ic_pull_out_64dp"
+        android:textColor="@color/colorButtonText"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/chbIsForProcessing_fragment_pull_out_steel_sheet"
+        app:layout_constraintBottom_toTopOf="@id/btnBack_fragment_pull_out_steel_sheet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnBack_fragment_pull_out_steel_sheet"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_rounded_corners"
+        android:text="@string/btnBackText_fragment_pull_out_steel_sheet"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/btnPullOut_fragment_pull_out_steel_sheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

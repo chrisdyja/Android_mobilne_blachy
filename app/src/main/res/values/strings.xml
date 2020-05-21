@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">MagazynBlach</string>
+
+    <!--  fragment_main  -->
+    <string name="btnAddText_fragment_main">Dodaj</string>
+    <string name="btnShowText_fragment_main">Znajdź</string>
+    <string name="btnManageText_fragment_main">Zarządzaj</string>
+
+    <!--  fragment_add  -->
+    <string name="tvNumberOfSteelSheetsWaitingText_fragment_add">Ilość blach oczekujących: </string>
+    <string name="edtSteelSheetBarcodeHint_fragment_add">Wprowadź kod blachy</string>
+    <string name="edtSteelSheetsQtyHint_fragment_add">Ilość blach</string>
+    <string name="btnAddText_fragment_add">Dodaj do magazynu</string>
+    <string name="btnShowWaitingList_fragment_add">Pokaż listę blach oczekujących</string>
+    <string name="btnAddToWaitingList_fragment_add">Dodaj do oczekujących</string>
+    <string name="btnSendToDataBase_fragment_add">Zatwierdź</string>
+    <string name="btnBack_fragment_add">Wróć</string>
+
+    <!--  fragment_show  -->
+    <string name="edtSteelSheetBarcodeHint_fragment_show">Wyszukaj po kodzie blachy</string>
+    <string name="btnBackText_fragment_show">Wróć</string>
+
+    <!--  fragment_pull_out  -->
+    <string name="edtBarcodeScanFieldHint_fragment_pull_out_steel_sheet">Zeskanuj kod</string>
+    <string name="btnPullOutText_fragment_pull_out_steel_sheet">Pobierz z magazynu</string>
+    <string name="btnBackText_fragment_pull_out_steel_sheet">Wróć</string>
+    <string name="chbIsForProcessingText_fragment_pull_out_steel_sheet">Do obróbki</string>
+    <string name="tvScannedSteelSheetsQtyText_fragment_pull_out_steel_sheet">Ilość:</string>
+
+    <!-- frgment_manage -->
+    <string name="btnPullOutText_fragment_manage_steel_sheet">Pobierz z magazynu</string>
+    <string name="btnReturnText_fragment_manage_steel_sheet">Zarządzaj arkuszami w obróbce</string>
+    <string name="btnBackText_fragment_manage_steel_sheet">Wróć</string>
+
+    <!--  steel_sheet_attributes_dialog  -->
+    <string name="tvMaterialText_dialog_attributes">Materiał: </string>
+    <string name="tvThicknessText_dialog_attributes">Grubość: </string>
+    <string name="tvLengthText_dialog_attributes">Długość: </string>
+    <string name="tvWidthText_dialog_attributes">Szerokość: </string>
+    <string name="tvAreaText_dialog_attributes">Powierzchnia: </string>
+    <string name="tvQtyText_dialog_attributes">Ilość: </string>
+    <string name="btnDeleteSteelSheetText_dialog_attributes">Usuń</string>
+
+    <!--  steel_sheet_locations_dialog -->
+    <string name="btnCancelText_dialog_locations">Anuluj</string>
+
+    <!--  steel_sheet_in_process_action_dialog  -->
+    <string name="btnReturnToWarehouse_dialog_process_actions">Wróć arkusz do magazynu</string>
+    <string name="btnSetSteelSheetAsProcessed_dialog_process_actions">Arkusz obrobiony</string>
+
+</resources>
